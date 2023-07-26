@@ -29,7 +29,7 @@ class CowinDashboard extends Component {
     const data = await response.json()
     if (response.ok === true) {
       const convertData = {
-        last7DaysVaccinations: data.last_7_days_vaccination,
+        last7DaysVaccination: data.last_7_days_vaccination,
         vaccinationByAge: data.vaccination_by_age,
         vaccinationByGender: data.vaccination_by_gender,
       }
