@@ -5,7 +5,7 @@ import {
   XAxis,
   YAxis,
   Legend,
-  ResponsiveContainer,
+ 
 } from 'recharts'
 
 import './index.css'
@@ -21,8 +21,10 @@ const VaccinationCoverage = props => {
   return (
     <div className="coverage-card-container">
       <h1 className="coverage-card-heading">Vaccination Coverage</h1>
-      <ResponsiveContainer width={1000} height={300}>
+      
         <BarChart
+          width={900}
+          height={400}
           data={vaccinationData}
           margin={{
             top: 5,
@@ -50,7 +52,7 @@ const VaccinationCoverage = props => {
           <Bar dataKey="dose_1" name="Dose 1" fill="#5a8dee" barSize="20%" />
           <Bar dataKey="dose_2" name="Dose 2" fill="#f54394" barSize="20%" />
         </BarChart>
-      </ResponsiveContainer>
+      
     </div>
   )
 }
